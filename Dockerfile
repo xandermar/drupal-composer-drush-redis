@@ -114,4 +114,5 @@ RUN composer require composer/installers && \
     composer require drupal/xmlsitemap && \  
     composer require drush/drush && \  
     composer require predis/predis && \  
-    composer require wikimedia/composer-merge-plugin
+    composer require wikimedia/composer-merge-plugin && \
+    composer require drupal/font_awesome
