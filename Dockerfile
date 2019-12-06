@@ -117,4 +117,5 @@ RUN composer require composer/installers && \
     composer require wikimedia/composer-merge-plugin && \
     composer require drupal/font_awesome && \
     composer require drupal/redis && \
-    composer require dynamic_layouts
+    composer require dynamic_layouts && \
+    composer require drupal/bootstrap_library
