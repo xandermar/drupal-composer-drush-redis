@@ -1,0 +1,13 @@
+name: Views XML Backend
+type: module
+description: Adds a views backend to query XML files.
+package: Views
+# core: 8.x
+dependencies:
+  - views
+
+# Information added by Drupal.org packaging script on 2016-04-12
+version: '8.x-1.0-alpha4'
+core: '8.x'
+project: 'views_xml_backend'
+datestamp: 1460493240

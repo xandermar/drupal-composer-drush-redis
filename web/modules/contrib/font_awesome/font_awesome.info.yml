@@ -1,0 +1,13 @@
+name: Font Awesome
+type: module
+description: Integrate Drupal with Font Awesome, the most popular icon set and toolkit.
+package: Fields
+# core: 8.x
+dependencies:
+  - lp_fontawesome:lp_fontawesome
+
+# Information added by Drupal.org packaging script on 2019-04-15
+version: '8.x-1.2'
+core: '8.x'
+project: 'font_awesome'
+datestamp: 1555330991

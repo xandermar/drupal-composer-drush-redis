@@ -1,0 +1,28 @@
+fontawesome-iconpicker:
+  remote: https://github.com/farbelous/fontawesome-iconpicker
+  version: 3.2.0
+  license:
+    name: MIT
+    url: https://github.com/farbelous/fontawesome-iconpicker/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    https://cdn.jsdelivr.net/npm/fontawesome-iconpicker@3.2.0/dist/js/fontawesome-iconpicker.min.js:
+      type: external
+      minified: true
+  css:
+    base:
+      https://cdn.jsdelivr.net/npm/fontawesome-iconpicker@3.2.0/dist/css/fontawesome-iconpicker.min.css:
+        type: external
+        minified: true
+  dependencies:
+    - lp_fontawesome/fontawesome
+  libraries_provider:
+    enabled: true
+    source: cdn.jsdelivr.net
+    npm_name: 'fontawesome-iconpicker'
+iconpicker:
+  js:
+    js/font-awesome-icon-picker.js: {}
+  dependencies:
+    - font_awesome/fontawesome-iconpicker
+    - core/jquery

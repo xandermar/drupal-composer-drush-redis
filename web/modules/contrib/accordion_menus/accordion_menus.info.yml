@@ -1,0 +1,13 @@
+name: Accordion Menus
+description: Provides accordion menu blocks.
+package: User interface
+type: module
+# core: 8.x
+
+configure: accordion_menus.config
+
+# Information added by Drupal.org packaging script on 2019-06-30
+version: '8.x-3.0'
+core: '8.x'
+project: 'accordion_menus'
+datestamp: 1561881793
