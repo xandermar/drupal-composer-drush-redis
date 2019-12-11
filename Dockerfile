@@ -175,5 +175,6 @@ RUN composer require drupal/redis
 RUN composer require dynamic_layouts
 RUN composer require drupal/bootstrap_library
 RUN composer require drupal/gdoc_field
+RUN composer require drupal/mailchimp
 
 WORKDIR /var/www/html/web
