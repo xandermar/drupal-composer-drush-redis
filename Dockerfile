@@ -77,7 +77,7 @@ RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/down
 
 WORKDIR /var/www/html
 
-RUN composer create-project drupal/drupal /var/www/html
+RUN composer create-project drupal/recommended-project /var/www/html
 RUN composer require composer/installers
 RUN composer require drupal/accordion_menus
 RUN composer require drupal/address
