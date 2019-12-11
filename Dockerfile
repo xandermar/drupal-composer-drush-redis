@@ -75,7 +75,7 @@ RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/down
 	chmod +x drush.phar && \
 	mv drush.phar /usr/local/bin/drush
 
-WORKDIR /var/www/html
+WORKDIR /var/www/html/web
 
 RUN composer create-project drupal/recommended-project /var/www/html
 RUN composer require composer/installers
@@ -177,3 +177,5 @@ RUN composer require drupal/redis
 RUN composer require dynamic_layouts
 RUN composer require drupal/bootstrap_library
 RUN composer require drupal/gdoc_field
+
+
