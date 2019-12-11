@@ -175,6 +175,9 @@ RUN composer require drupal/redis
 RUN composer require dynamic_layouts
 RUN composer require drupal/bootstrap_library
 RUN composer require drupal/gdoc_field
+<<<<<<< HEAD
 RUN composer require drupal/mailchimp
+=======
+>>>>>>> 4127502c538c58322c8ae605c1b4fbd3c6725045
 
 WORKDIR /var/www/html/web
