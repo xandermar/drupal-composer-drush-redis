@@ -1,0 +1,17 @@
+{
+    "name": "drupal/font_awesome",
+    "description": "Integrate Drupal with Font Awesome, the most popular icon set and toolkit on the web.",
+    "homepage": "https://www.drupal.org/project/font_awesome",
+    "support": {
+        "source": "https://gitlab.com/upstreamable/drupal-font-awesome",
+        "issues": "https://gitlab.com/upstreamable/drupal-font-awesome/issues"
+    },
+    "require": {
+        "drupal/core": "^8.5",
+        "drupal/lp_fontawesome": "^5"
+    },
+    "type": "drupal-module",
+    "license": [
+        "GPL-2.0-or-later"
+    ]
+}

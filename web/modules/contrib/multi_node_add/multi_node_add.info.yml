@@ -1,0 +1,10 @@
+name: Multiple Node Add
+description: "Provides a way to add multiple nodes in one page, in one round."
+# core: 8.x
+type: module
+
+# Information added by Drupal.org packaging script on 2017-03-21
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'multi_node_add'
+datestamp: 1490136485

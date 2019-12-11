@@ -1,0 +1,18 @@
+field.widget.settings.font_awesome_icon_picker:
+  type: mapping
+  label: Font Awesome icon picker widget settings
+  mapping:
+    default_value:
+      type: string
+      label: Default value
+
+field.formatter.settings.font_awesome_icon:
+  type: mapping
+  label: Icon formatter settings
+  mapping:
+    size:
+      type: string
+      label: Size
+    fixed_width:
+      type: string
+      label: Fixed Width

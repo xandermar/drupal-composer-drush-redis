@@ -1,0 +1,19 @@
+{
+  "name": "drupal/mass_password_change",
+  "description": "Massive password change or reset.",
+  "type": "drupal-module",
+  "homepage": "http://drupal.org/project/mass_password_change",
+  "authors": [
+    {
+      "name": "Kurucz István (nevergone)",
+      "homepage": "https://www.drupal.org/u/nevergone",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "http://drupal.org/project/mass_password_change",
+    "source": "https://git.drupalcode.org/project/mass_password_change"
+  },
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev"
+}

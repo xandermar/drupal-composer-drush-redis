@@ -1,0 +1,15 @@
+name: Views Flipped Table
+description: Table style with rows and columns flipped.
+package: Views
+
+type: module
+# core: 8.x
+
+dependencies:
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2018-10-17
+version: '8.x-1.3'
+core: '8.x'
+project: 'views_flipped_table'
+datestamp: 1539796988

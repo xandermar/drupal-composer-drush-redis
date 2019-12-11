@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains login_redirect_per_role.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function login_redirect_per_role_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the login_redirect_per_role module.
+    case 'help.page.login_redirect_per_role':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('User Login redirect as per role.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function login_redirect_per_role_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#submit'][] = 'login_redirect_per_role_user_login_form_submit';
+}
+
+/**
+ * Login form submit callback: Set redirect URL.
+ */
+function login_redirect_per_role_user_login_form_submit(array &$form, FormStateInterface $form_state) {
+
+  /** @var \Drupal\login_redirect_per_role\LoginRedirectPerRole $service */
+  $service = \Drupal::service('login_redirect_per_role.service');
+  $url = $service->getLoginRedirectUrl();
+
+  if ($url instanceof Url) {
+    $form_state->setRedirectUrl($url);
+  }
+
+}
