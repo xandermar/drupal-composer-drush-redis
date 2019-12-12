@@ -1,6 +1,4 @@
-# from https://www.drupal.org/docs/8/system-requirements/drupal-8-php-requirements
 FROM php:7.3-apache-stretch
-# TODO switch to buster once https://github.com/docker-library/php/issues/865 is resolved in a clean way (either in the PHP image or in PHP itself)
 
 # install the PHP extensions we need
 RUN set -eux; \
@@ -57,24 +55,5 @@ RUN { \
 		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-
-RUN apt-get update && apt-get install -y \
-	curl \
-	git \
-	mysql-client \
-	vim \
-	zip \
-	wget
-
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-	php composer-setup.php && \
-	mv composer.phar /usr/local/bin/composer && \
-	php -r "unlink('composer-setup.php');"
-
-RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.4.2/drush.phar && \
-	chmod +x drush.phar && \
-	mv drush.phar /usr/local/bin/drush
-
-COPY ./web /var/www/html
-
-WORKDIR /var/www/html/web
+ADD web /var/www/html
+WORKDIR /var/www/html
